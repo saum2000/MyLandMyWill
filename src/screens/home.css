@@ -1,0 +1,13 @@
+.cardpad {
+    background-color: whitesmoke;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 4%;
+}
+
+.marg {
+    margin-bottom: 15%;
+}

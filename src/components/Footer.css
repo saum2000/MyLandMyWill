@@ -1,0 +1,30 @@
+.Footer {
+    margin-bottom: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(3, 39, 117);
+    color: rgb(245, 242, 238);
+    align-items: center;
+    min-height: 10vh;
+    bottom: 0;
+}
+
+.Footer-list {
+    list-style-type: none;
+}
+
+.list2 {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.list2 a {
+    cursor: pointer;
+}
+
+.list-head {
+    font-weight: 700;
+}
