@@ -2,7 +2,28 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+<<<<<<< HEAD
 import { requestAccount, signer, _intializeContract } from "./template.js";
+=======
+import { ethers } from "ethers";
+import TokenArtifact from "C:/Users/swaru/OneDrive/Desktop/btech-proj/src/artifacts/contracts/LandRegistry.sol/LandRegistry.json";
+// const tokenAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+const tokenAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
+async function requestAccount() {
+  await window.ethereum.request({ method: "eth_requestAccounts" });
+}
+
+const provider = new ethers.providers.Web3Provider(window.ethereum);
+const signer = provider.getSigner();
+async function _intializeContract(init) {
+  // We first initialize ethers by creating a provider using window.ethereum
+  // When, we initialize the contract using that provider and the token's
+  // artifact. You can do this same thing with your contracts.
+  const contract = new ethers.Contract(tokenAddress, TokenArtifact.abi, init);
+
+  return contract;
+}
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -45,9 +66,13 @@ const Formss = ({ handleClose }) => {
       City
     );
     await seller.wait();
+<<<<<<< HEAD
     const reg = await contract.RegisteredSellerMapping("0x70997970C51812dc3A010C7d01b50e0d17dc79C8");
     console.log("Seller Registered");
     console.log(reg);
+=======
+    console.log("Seller Registered");
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
   }
   return (
     <form className={classes.root} onSubmit={handleSubmit}>

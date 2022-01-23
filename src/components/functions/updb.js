@@ -1,6 +1,10 @@
 import { useState } from "react";
 import Button from "@material-ui/core/Button";
+<<<<<<< HEAD
 import Mdbuy from "./mdupbuy";
+=======
+import Mdbuy from "./mdbuy";
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
 const Updateb = () => {
   //   declare a new state variable for modal open
   const [open, setOpen] = useState(false);

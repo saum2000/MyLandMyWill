@@ -1,8 +1,13 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
+<<<<<<< HEAD
     "D:\\Users\\sneha\\MyLandMyWill\\MyLandMyWill-master\\contracts\\Greeter.sol": {
       "lastModificationDate": 1642707399232,
+=======
+    "C:\\Users\\swaru\\OneDrive\\Desktop\\btech-proj\\contracts\\Greeter.sol": {
+      "lastModificationDate": 1642616388177,
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
       "contentHash": "54c28c84e5277b35b8c8329ce9755dae",
       "sourceName": "contracts/Greeter.sol",
       "solcConfig": {
@@ -38,8 +43,13 @@
         "Greeter"
       ]
     },
+<<<<<<< HEAD
     "D:\\Users\\sneha\\MyLandMyWill\\MyLandMyWill-master\\node_modules\\hardhat\\console.sol": {
       "lastModificationDate": 1642707952228,
+=======
+    "C:\\Users\\swaru\\OneDrive\\Desktop\\btech-proj\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1642616388109,
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
       "contentHash": "cc4777addd464ea56fa35b1c45df0591",
       "sourceName": "hardhat/console.sol",
       "solcConfig": {
@@ -73,9 +83,15 @@
         "console"
       ]
     },
+<<<<<<< HEAD
     "D:\\Users\\sneha\\MyLandMyWill\\MyLandMyWill-master\\contracts\\LandRegistry.sol": {
       "lastModificationDate": 1642777039187,
       "contentHash": "90b1d5000e251681e9f6e8aa58046cae",
+=======
+    "C:\\Users\\swaru\\OneDrive\\Desktop\\btech-proj\\contracts\\LandRegistry.sol": {
+      "lastModificationDate": 1642618311066,
+      "contentHash": "9debca9e61746809f766b0b44bb26363",
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
       "sourceName": "contracts/LandRegistry.sol",
       "solcConfig": {
         "version": "0.8.4",

@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+<<<<<<< HEAD
 import { requestAccount, signer, _intializeContract } from "./template.js";
+=======
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,6 +34,7 @@ const Form1 = ({ handleClose }) => {
     console.log(LandId,newOwner);
     handleClose();
   };
+<<<<<<< HEAD
 
   async function OwnershipTransfer() {
     await requestAccount();
@@ -40,6 +44,8 @@ const Form1 = ({ handleClose }) => {
     console.log("Ownership Transfered");
   }
 
+=======
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
   return (
     <form className={classes.root} onSubmit={handleSubmit}>
       <TextField
@@ -60,7 +66,11 @@ const Form1 = ({ handleClose }) => {
         <Button variant="contained" onClick={handleClose}>
           Cancel{" "}
         </Button>{" "}
+<<<<<<< HEAD
         <Button type="submit" variant="contained" color="primary" onClick={OwnershipTransfer}>
+=======
+        <Button type="submit" variant="contained" color="primary">
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
           Submit{" "}
         </Button>{" "}
       </div>{" "}

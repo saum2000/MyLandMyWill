@@ -16,7 +16,10 @@ contract LandRegistry {
         string city;
         string state;        
         uint physicalSurveyNumber;
+<<<<<<< HEAD
         uint landSize; // in sq feet
+=======
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
         string ipfsHash; // for document upload
         string document; // document type
     }
@@ -79,8 +82,11 @@ contract LandRegistry {
     mapping(uint => bool) public RequestedLands;
     mapping(uint => bool) public PaymentReceived;
 
+<<<<<<< HEAD
     mapping(uint => Buyer) public wills; // LandId to Heir mapping
 
+=======
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
 
     address public GovtOfficialAddress;
     GovtOfficial govtOfficial;
@@ -133,6 +139,7 @@ contract LandRegistry {
     }
 
 // string memory _name, uint _age, string memory _designation
+<<<<<<< HEAD
     constructor(string memory _name, uint _age, string memory _designation) {
         GovtOfficialAddress = msg.sender;
         govtOfficial = GovtOfficial(_name, _age, _designation);
@@ -152,14 +159,40 @@ contract LandRegistry {
 
     function rejectBuyer(address _buyerAddress) _onlyGovtOfficial public{
         BuyerRejection[_buyerAddress] = true;
+=======
+    constructor() {
+        GovtOfficialAddress = msg.sender;
+        govtOfficial = GovtOfficial("Abcd",80,"Tehsildar");
+    }
+
+    function verifySeller() _onlyGovtOfficial public{
+        SellerVerification[msg.sender] = true;
+    }
+
+    function rejectSeller() _onlyGovtOfficial public{
+        SellerRejection[msg.sender] = true;
+    }
+
+    function verifyBuyer() _onlyGovtOfficial public{
+        BuyerVerification[msg.sender] = true;
+    }
+
+    function rejectBuyer() _onlyGovtOfficial public{
+        BuyerRejection[msg.sender] = true;
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
     }
 
     function verifyLand(uint _landId) _onlyGovtOfficial public{
         LandVerification[_landId] = true;
     }
 
+<<<<<<< HEAD
     function registerLand(uint _pincode, string memory _city,string memory _state, uint _landPrice, uint _propertyPID, uint _surveyNum, uint _landSize, string memory _ipfsHash, string memory _document) _onlyRegisteredSeller _onlyVerified public {
         lands[landsCount] = Land(landsCount+1, _propertyPID, _pincode, _landPrice, _city, _state, _surveyNum, _landSize, _ipfsHash, _document);
+=======
+    function registerLand(uint _pincode, string memory _city,string memory _state, uint _landPrice, uint _propertyPID,uint _surveyNum,string memory _ipfsHash, string memory _document) _onlyRegisteredSeller _onlyVerified public {
+        lands[landsCount] = Land(landsCount+1, _propertyPID, _pincode, _landPrice, _city, _state, _surveyNum, _ipfsHash, _document);
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
         landsCount++;
         LandOwner[landsCount] = msg.sender;
     }
@@ -225,6 +258,7 @@ contract LandRegistry {
 
     function ownershipTransfer(uint _landId, address _newOwner) _paid(_landId) _onlyGovtOfficial public {
         LandOwner[_landId] = _newOwner;
+<<<<<<< HEAD
     }
 
     function createWill(uint _landId, Buyer memory heir) _onlyRegisteredSeller  public {
@@ -241,6 +275,10 @@ contract LandRegistry {
         require(wills[_landId].buyerId != address(0), "will doesn't exist for this property");
         LandOwner[_landId] = wills[_landId].buyerId;
     }
+=======
+    }  
+
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
 
 
 }

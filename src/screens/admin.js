@@ -5,12 +5,17 @@ import { Row, Col, CardGroup } from "react-bootstrap";
 import Button from "@material-ui/core/Button";
 // import CardDeck from 'react-bootstrap/CardDeck'
 import React, { Component } from "react";
+<<<<<<< HEAD
 import Veri from "../components/functions/veriland";
+=======
+import Veri from "../components/functions/veri-s";
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
 import Transfer from "../components/functions/transfer";
 import seller from "../components/photos/seller.png";
 import buyer from "../components/photos/buyer.png";
 import land from "../components/photos/land.png";
 import transfer from "../components/photos/transfer.jpg";
+<<<<<<< HEAD
 import { requestAccount, signer, _intializeContract } from "D:/Users/sneha/MyLandMyWill/MyLandMyWill-master/src/components/functions/template.js";
 
 class AdminScreen extends Component {
@@ -46,6 +51,10 @@ class AdminScreen extends Component {
       await RejectB.wait();
       console.log("Buyer Rejected");
     }
+=======
+class AdminScreen extends Component {
+  render() {
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
     return (
       <>
         <CardGroup>
@@ -55,11 +64,19 @@ class AdminScreen extends Component {
               <div><Button
                 variant="contained"
                 color="primary"
+<<<<<<< HEAD
                 style={{ color: " white", fontWeight: "bold" }} onClick={VerifySeller}>
                 Verify{" "}
               </Button>
               <Button
                 variant="contained"style={{marginLeft:"12%",backgroundColor:"red", color: " white", fontWeight: "bold" }} onClick={RejectSeller}>Reject{" "}
+=======
+                style={{ color: " white", fontWeight: "bold" }}>
+                Verify{" "}
+              </Button>
+              <Button
+                variant="contained"style={{marginLeft:"12%",backgroundColor:"red", color: " white", fontWeight: "bold" }}>Reject{" "}
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
               </Button></div>
             </Col>{" "}
             <Col sm={12} md={9} lg={6} xl={3} className="cardpad">
@@ -67,12 +84,20 @@ class AdminScreen extends Component {
               <div><Button
                 variant="contained"
                 color="primary"
+<<<<<<< HEAD
                 style={{ color: " white", fontWeight: "bold" }} 
                 onClick={VerifyBuyer}>
                 Verify{" "}
               </Button>
               <Button
                 variant="contained"style={{marginLeft:"12%",backgroundColor:"red", color: " white", fontWeight: "bold" }} onClick={RejectBuyer}>Reject{" "}
+=======
+                style={{ color: " white", fontWeight: "bold" }}>
+                Verify{" "}
+              </Button>
+              <Button
+                variant="contained"style={{marginLeft:"12%",backgroundColor:"red", color: " white", fontWeight: "bold" }}>Reject{" "}
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
               </Button></div>
             </Col>{" "}
             <Col sm={12} md={9} lg={6} xl={3} className="cardpad">

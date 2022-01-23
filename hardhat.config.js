@@ -21,6 +21,7 @@ module.exports = {
     paths: {
         artifacts: "./src/artifacts",
     },
+<<<<<<< HEAD
     defaultNetwork: "ganache",
     networks: {
         ganache: {
@@ -31,3 +32,11 @@ module.exports = {
         }
     }
 }
+=======
+    networks: {
+        hardhat: {
+            chainId: 1337,
+        },
+    },
+};
+>>>>>>> 1d3b6e53ebfe4dbe98256e52631398e02cb23c68
