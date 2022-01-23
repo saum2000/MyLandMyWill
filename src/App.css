@@ -1,0 +1,34 @@
+    .App {
+        text-align: center;
+    }
+    
+    .Foot {
+        position: flex-end;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-size: medium;
+        background-color: rgb(240, 240, 240);
+        text-align: center;
+        /* position: absolute; */
+    }
+    
+    @media (max-width:618px) {
+        .Foot {
+            /* position: fixed; */
+            bottom: 0;
+            /* margin-top: 3%; */
+            width: 100%;
+            top: 10vh;
+            position: relative;
+        }
+    }
+    
+    @media (min-width: 619px) {
+        .Foot {
+            position: fixed;
+            bottom: 0;
+            margin-top: 3%;
+            width: 100%;
+        }
+    }

@@ -1,0 +1,28 @@
+@media(max-width:991px) {
+    .cardpad {
+        margin-left: 1%;
+    }
+}
+
+@media(max-width:560px) {
+    .cardpad {
+        padding-left: 0%;
+        margin-left: 5%;
+    }
+}
+
+@media(max-width:362px) {
+    .cardpad {
+        padding-left: 0;
+    }
+}
+
+.cardpad {
+    background-color: whitesmoke;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 4%;
+}
