@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import TokenArtifact from "D:/Users/sneha/MyLandMyWill/MyLandMyWill-master/src/artifacts/contracts/LandRegistry.sol/LandRegistry.json";
+import TokenArtifact from "C:/Users/swaru/OneDrive/Desktop/btech-proj/src/artifacts/contracts/LandRegistry.sol/LandRegistry.json";
 const tokenAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 //const tokenAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
 async function requestAccount() {

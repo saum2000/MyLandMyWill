@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "@material-ui/core/Button";
-import Mdbuy from "./mdupbuy";
-const Updateb = () => {
+import Mdwt from "./mdwilltrans";
+const Willtrans = () => {
   //   declare a new state variable for modal open
   const [open, setOpen] = useState(false);
 
@@ -17,20 +17,20 @@ const Updateb = () => {
 
   return (
     <div className="App">
-      {/* <Form/> */}
+      {" "}
+      {/* <Form/> */}{" "}
       <Button
         variant="contained"
         color="primary"
         style={{ color: " white", fontWeight: "bold" }}
         onClick={handleOpen}
       >
-        Click Here
+        Click Here{" "}
       </Button>
-
-      {/* display the modal and pass props */}
-      <Mdbuy open={open} handleClose={handleClose} />
+      {/* display the modal and pass props */}{" "}
+      <Mdwt open={open} handleClose={handleClose} />{" "}
     </div>
   );
 };
 
-export default Updateb;
+export default Willtrans;

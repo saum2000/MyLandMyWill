@@ -21,51 +21,47 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-const Form1 = ({ handleClose }) => {
+
+const Willtrnsform = ({ handleClose }) => {
   const classes = useStyles();
-  const [LandId, setLandId] = useState("");
-  const [newOwner, setnewOwner] = useState("");
+  const [LandID, setLandID] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(LandId,newOwner);
+    console.log(LandID);
     handleClose();
   };
-
-  async function OwnershipTransfer() {
+  async function TransferWill() {
     await requestAccount();
     const contract = await _intializeContract(signer);
-    const transfer = await contract.ownershipTransfer(LandId, newOwner);
-    await transfer.wait();
-    console.log("Ownership Transfered");
+    const willtr = await contract.transferWillProperty(LandID);
+    await willtr.wait();
+    console.log("Will Transfered");
   }
 
   return (
     <form className={classes.root} onSubmit={handleSubmit}>
       <TextField
-        label="LandId"
+        label="LandID"
         variant="filled"
         required
-        value={LandId}
-        onChange={(e) => setLandId(e.target.value)}
-      />
-      <TextField
-        label="newOwner"
-        variant="filled"
-        required
-        value={newOwner}
-        onChange={(e) => setnewOwner(e.target.value)}
-      />
+        value={LandID}
+        onChange={(e) => setLandID(e.target.value)}
+      />{" "}
       <div>
         <Button variant="contained" onClick={handleClose}>
           Cancel{" "}
         </Button>{" "}
-        <Button type="submit" variant="contained" color="primary" onClick={OwnershipTransfer}>
+        <Button
+          type="submit"
+          variant="contained"
+          color="primary"
+          onClick={TransferWill}
+        >
           Submit{" "}
         </Button>{" "}
       </div>{" "}
     </form>
   );
 };
-
-export default Form1;
+export default Willtrnsform;

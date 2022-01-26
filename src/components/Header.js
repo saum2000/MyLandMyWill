@@ -15,8 +15,8 @@ function Header() {
           <Link to={"/"}> Home </Link> {/* <a href="#"> Home </a> */}{" "}
         </li>{" "}
         <li id="Header-li">
-          <Link to={"/admin"}> AdminControls </Link> {/* <a href="#"> Home </a> */}{" "}
-        </li>{" "}
+          <Link to={"/admin"}> AdminControls </Link> {/* <a href="#"> Home </a>*/}
+        </li> 
         <li className="Header-log">
           {" "}
           {/* <Link to={'/signin'}><Login /></Link> */} <Login />{" "}

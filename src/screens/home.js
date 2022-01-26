@@ -12,6 +12,8 @@ import appreq from "../components/photos/appreq.jpg";
 import ups from "../components/photos/ups.png";
 import upb from "../components/photos/upb.jpg";
 import pay from "../components/photos/pay.png";
+import will from "../components/photos/reg-will.png";
+import del from "../components/photos/del-will.jpg";
 import Regs from "../components/functions/regs";
 import Regb from "../components/functions/regb";
 import Regl from "../components/functions/regl";
@@ -20,6 +22,8 @@ import Appr from "../components/functions/appr";
 import Pay from "../components/functions/pay";
 import Updates from "../components/functions/upds";
 import Updateb from "../components/functions/updb";
+import Create from "../components/functions/regwill"
+import Delete from "../components/functions/delete"
 const Homescreen = () => {
   return (
     <>
@@ -28,39 +32,49 @@ const Homescreen = () => {
           <Col sm={12} md={9} lg={6} xl={3} className="cardpad">
             <Card src={regs} name="Register Owner/Seller" />
             <Regs />
-          </Col>
+          </Col>{" "}
           <Col sm={12} md={9} lg={6} xl={3} className="cardpad">
             <Card src={regb} name="Register Buyer " />
             <Regb />
-          </Col>
+          </Col>{" "}
           <Col sm={12} md={9} lg={6} xl={3} className="cardpad">
             <Card src={regl} name="Register Land" />
             <Regl />
-          </Col>
+          </Col>{" "}
           <Col sm={12} md={9} lg={6} xl={3} className="cardpad">
             <Card src={reql} name="Request Land" />
             <Reql />
-          </Col>
-        </Row>
+          </Col>{" "}
+        </Row>{" "}
         <Row style={{ position: "relative", left: "9%" }}>
           <Col sm={12} md={9} lg={6} xl={3} className="cardpad">
             <Card src={appreq} name="Approve Request" />
             <Appr />
-          </Col>
+          </Col>{" "}
           <Col sm={12} md={9} lg={6} xl={3} className="cardpad">
             <Card src={ups} name="Update Seller" />
             <Updates />
-          </Col>
+          </Col>{" "}
           <Col sm={12} md={9} lg={6} xl={3} className="cardpad">
             <Card src={upb} name="Update Buyer " />
             <Updateb />
-          </Col>
+          </Col>{" "}
           <Col sm={12} md={9} lg={6} xl={3} className="cardpad">
             <Card src={pay} name="Land Payment" />
             <Pay />
-          </Col>
-        </Row>
-      </CardGroup>
+          </Col>{" "}
+        </Row>{" "}
+        <Row style={{ position: "relative", left: "30%" }}>
+          <Col sm={12} md={9} lg={6} xl={3} className="cardpad">
+            <Card src={will} name="Create Will" />
+            <Create/>
+          </Col>{" "}
+          <Col sm={12} md={9} lg={6} xl={3} className="cardpad">
+            <Card src={del} name="Delete Will" />
+            <Delete/>
+          </Col>{" "}
+        </Row>{" "}
+      </CardGroup>{" "}
     </>
   );
 };
